@@ -23,24 +23,6 @@ public class Aire {
     private String calificacion;
     private String empresa;
     
-    
-    //realtime
-    private String realtimeCode;
-    private String realtimeName;
-    private String realtimeDateTime;
-    
-    //tableRow
-    private String color;
-    private String status;
-    private String statuscode;
-    private String datetime;
-    private String parameter;
-    private String movil;
-    private String value;
-    private String unit;
-    private String icap;
-    private String icapText;
-
     public Aire() {
     }
 
@@ -243,9 +225,7 @@ public class Aire {
     
     public String toCSV()
     {
-        return "" + id + "," + nombre + "," + key + "," + latitud + "," + longitud + "," + comuna + "," + red + "," + region + "," +
-                regionIndex + "," + calificacion + "," + empresa + "," + realtimeCode + "," + realtimeName + "," + realtimeDateTime + "," + color + "," +
-                status + "," + statuscode + "," + datetime + "," + parameter + "," + movil + "," + value + "," + unit + "," + icap + "," + icapText + "";
+        return "" + afp + "," + fecha + "," + fondo + "," + valor + "," + valorUf + "";
     }
 
 }//Aire
