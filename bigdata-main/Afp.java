@@ -70,4 +70,4 @@ public class Afp {
         return "" + afp + "," + fecha + "," + fondo + "," + valor + "," + valorUf + "";
     }
 
-}//Aire
+}//Afp
