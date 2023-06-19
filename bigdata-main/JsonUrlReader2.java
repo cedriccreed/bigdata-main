@@ -28,9 +28,9 @@ public class JsonUrlReader2 {
     }
       
     public ArrayList<Aire> cargarURL() throws StreamReadException, DatabindException, MalformedURLException, IOException {
-        String url = "https://sinca.mma.gob.cl/index.php/json/listadomapa2k19/";
+        String url = "https://www.quetalmiafp.cl/api/Cuota/ObtenerCuotas?listaAFPs=CAPITAL%2CCUPRUM%2CHABITAT%2CMODELO%2CPLANVITAL%2CPROVIDA%2CUNO&listaFondos=A%2CB%2CC%2CD%2CE&fechaInicial=19%2F06%2F2022&fechaFinal=19%2F06%2F2023";
         
-        ArrayList<Aire> aAire = new ArrayList();
+        ArrayList<Afp> aAfp = new ArrayList();
 
         //JsonNode node = new JsonUrlReader().get(url);
         //System.out.println(node.toPrettyString());
@@ -46,36 +46,15 @@ public class JsonUrlReader2 {
         
         Iterator<JsonNode> it = node.iterator();
         
-        Aire a = null;
-        a = new Aire();
-        a.setId("ID");
-        a.setNombre("NOMBRE");
-        a.setKey("KEY");
-        a.setLatitud("LATITUD");
-        a.setLongitud("LONGITUD");
-        a.setComuna("COMUNA");
-        a.setRed("RED");
-        a.setRegion("REGION");
-        a.setRegionIndex("REGIONINDEX");
-        a.setCalificacion("CALIFICACOIN");
-        a.setEmpresa("EMPRESA");
-
-        a.setRealtimeCode("CODE");
-        a.setRealtimeName("NAME");
-        a.setRealtimeDateTime("REALTIMEDATETIME");
-
-        a.setColor("COLOR");
-        a.setStatus("STATUS");
-        a.setStatuscode("STATUSCODE");
-        a.setDatetime("DATETIME");
-        a.setParameter("PARAMETER");
-        a.setMovil("MOVIL");
-        a.setValue("VALUE");
-        a.setUnit("UNIT");
-        a.setIcap("ICAP");
-        a.setIcapText("ICAPTEXT");
+        Afp a = null;
+        a = new Afp();
+        a.setAfp("AFP");
+        a.setFecha("FECHA");
+        a.setFondo("FONDO");
+        a.setValor("VALOR");
+	a.setValorUf("VALORUF");
 	    
-	aAire.add(a);    
+	aAfp.add(a);    
 
         int i = 1;
         while (it.hasNext())
