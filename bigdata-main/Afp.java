@@ -9,218 +9,60 @@ package org.apache.beam.examples;
  *
  * @author leo
  */
-public class Aire {
+public class Afp {
     
-    private String id;
-    private String nombre;
-    private String key;
-    private String latitud;
-    private String longitud;
-    private String comuna;
-    private String red;
-    private String region;
-    private String regionIndex;
-    private String calificacion;
-    private String empresa;
+    private String afp;
+    private String fecha;
+    private String fondo;
+    private String valor;
+    private String valorUf;
     
-    public Aire() {
+    public Afp() {
     }
 
-    public String getId() {
-        return id;
+    public String getAfp() {
+        return afp;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setAfp(String afp) {
+        this.afp = afp;
     }
     
-    public String getNombre() {
-        return nombre;
+    public String getFecha() {
+        return fecha;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
-    public String getKey() {
-        return key;
+    public String getFondo() {
+        return fondo;
     }
 
-    public void setKey(String key) {
-        this.key = key;
+    public void setFondo(String fondo) {
+        this.fondo = fondo;
     }
 
-    public String getLatitud() {
-        return latitud;
+    public String getValor() {
+        return valor;
     }
 
-    public void setLatitud(String latitud) {
-        this.latitud = latitud;
+    public void setValor(String valor) {
+        this.valor = valor;
     }
 
-    public String getLongitud() {
-        return longitud;
+    public String getValorUf() {
+        return valorUf;
     }
 
-    public void setLongitud(String longitud) {
-        this.longitud = longitud;
-    }
-
-    public String getComuna() {
-        return comuna;
-    }
-
-    public void setComuna(String comuna) {
-        this.comuna = comuna;
-    }
-
-    public String getRed() {
-        return red;
-    }
-
-    public void setRed(String red) {
-        this.red = red;
-    }
-
-    public String getRegion() {
-        return region;
-    }
-
-    public void setRegion(String region) {
-        this.region = region;
-    }
-
-    public String getRegionIndex() {
-        return regionIndex;
-    }
-
-    public void setRegionIndex(String regionIndex) {
-        this.regionIndex = regionIndex;
-    }
-
-    public String getCalificacion() {
-        return calificacion;
-    }
-
-    public void setCalificacion(String calificacion) {
-        this.calificacion = calificacion;
-    }
-
-    public String getEmpresa() {
-        return empresa;
-    }
-
-    public void setEmpresa(String empresa) {
-        this.empresa = empresa;
-    }
-
-    public String getRealtimeCode() {
-        return realtimeCode;
-    }
-
-    public void setRealtimeCode(String realtimeCode) {
-        this.realtimeCode = realtimeCode;
-    }
-
-    public String getRealtimeName() {
-        return realtimeName;
-    }
-
-    public void setRealtimeName(String realtimeName) {
-        this.realtimeName = realtimeName;
-    }
-
-    public String getRealtimeDateTime() {
-        return realtimeDateTime;
-    }
-
-    public void setRealtimeDateTime(String realtimeDateTime) {
-        this.realtimeDateTime = realtimeDateTime;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getStatuscode() {
-        return statuscode;
-    }
-
-    public void setStatuscode(String statuscode) {
-        this.statuscode = statuscode;
-    }
-
-    public String getDatetime() {
-        return datetime;
-    }
-
-    public void setDatetime(String datetime) {
-        this.datetime = datetime;
-    }
-
-    public String getParameter() {
-        return parameter;
-    }
-
-    public void setParameter(String parameter) {
-        this.parameter = parameter;
-    }
-
-    public String getMovil() {
-        return movil;
-    }
-
-    public void setMovil(String movil) {
-        this.movil = movil;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
-
-    public String getUnit() {
-        return unit;
-    }
-
-    public void setUnit(String unit) {
-        this.unit = unit;
-    }
-
-    public String getIcap() {
-        return icap;
-    }
-
-    public void setIcap(String icap) {
-        this.icap = icap;
-    }
-
-    public String getIcapText() {
-        return icapText;
-    }
-
-    public void setIcapText(String icapText) {
-        this.icapText = icapText;
+    public void setValorUf(String valorUf) {
+        this.valorUf = valorUf;
     }
 
     @Override
     public String toString() {
-        return "Aire{" + "id=" + id + ", nombre=" + nombre + ", key=" + key + ", latitud=" + latitud + ", longitud=" + longitud + ", comuna=" + comuna + ", red=" + red + ", region=" + region + ", regionIndex=" + regionIndex + ", calificacion=" + calificacion + ", empresa=" + empresa + ", realtimeCode=" + realtimeCode + ", realtimeName=" + realtimeName + ", realtimeDateTime=" + realtimeDateTime + ", color=" + color + ", status=" + status + ", statuscode=" + statuscode + ", datetime=" + datetime + ", parameter=" + parameter + ", movil=" + movil + ", value=" + value + ", unit=" + unit + ", icap=" + icap + ", icapText=" + icapText + '}';
+        return "Afp{" + "afp=" + afp + ", fecha=" + fecha + ", fondo=" + fondo + ", valor=" + valor + ", valorUf=" + valorUf + " '}';
     }
     
     public String toCSV()
